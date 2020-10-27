@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Paymask Mpesa</string>
+
+    <string name="icon_money">&#xf0d6;</string>
+    <string name="mpesa_dialog_title"><u>MAKE PAYMENT</u></string>
+    <string name="phone_number">Phone number :</string>
+    <string name="amount">Amount :</string>
+
+</resources>

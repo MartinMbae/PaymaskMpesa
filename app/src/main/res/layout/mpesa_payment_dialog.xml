@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheetWhereFrom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mpesa_icon"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mpesa_dialog_title"
+            android:textColor="#444"
+            android:textSize="@dimen/_12sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/phone_number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/dialog_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ellipsize="end"
+            android:text="2547xxxxxxxxx"
+            android:lines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/amount"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/dialog_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:ellipsize="end"
+            android:text="Ksh. 1"
+            android:lines="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_proceed_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        fancy:fb_borderColor="@color/mpesa_green"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#5577bd"
+        fancy:fb_fontIconResource="@string/icon_money"
+        fancy:fb_fontIconSize="20sp"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Process Payment"
+        fancy:fb_textColor="@color/mpesa_green"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

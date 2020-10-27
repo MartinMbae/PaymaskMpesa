@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number Format 2547xxxxxxxxx"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount eg 20"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btn_facebook_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="@dimen/_30sdp"
+        android:paddingRight="@dimen/_30sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        fancy:fb_borderColor="#3b5998"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#FFFFFF"
+        fancy:fb_focusColor="#5577bd"
+        fancy:fb_fontIconSize="25sp"
+        fancy:fb_iconPosition="right"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Initiate payment"
+        fancy:fb_textColor="#3b5998"
+        android:layout_gravity="center_horizontal"
+        android:onClick="pay"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+</LinearLayout>
